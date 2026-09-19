@@ -1,0 +1,49 @@
+:root {
+  --text: #f8fafc;
+  --text-muted: #9ca3af;
+  --bg-color: #000000;
+  --primary: #10b981;
+  --primary-hover: #059669;
+  --danger: #ef4444;
+  --success: #34d399;
+  --card-bg: rgba(15, 25, 20, 0.6);
+  --card-border: rgba(16, 185, 129, 0.15);
+  --font-main: 'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  /* Premium animated mesh gradient background - Green/Black */
+  background: 
+    radial-gradient(circle at 15% 50%, rgba(16, 185, 129, 0.12), transparent 30%),
+    radial-gradient(circle at 85% 30%, rgba(52, 211, 153, 0.1), transparent 30%),
+    #000000;
+  background-attachment: fixed;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
